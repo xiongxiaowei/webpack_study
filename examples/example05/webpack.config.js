@@ -1,0 +1,12 @@
+module.exports={
+  entry:'./entry.js',//入口文件
+  output:{
+    filename:'bundle.js'//出口文件
+  },
+  module:{
+    loaders:[{
+      test:/\.css$/,
+      loader:'style-loader!css-loader'
+    }]
+  }
+}
